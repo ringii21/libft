@@ -6,7 +6,7 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 20:11:27 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/12 20:18:40 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 16:58:12 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s)
 {
-	int len;
-	char *str;
+	int		len;
+	char	*str;
 
 	len = 0;
 	while (s[len])
@@ -30,5 +30,5 @@ char	*ft_strdup(const char *s)
 		len++;
 	}
 	str[len] = '\0';
-	return(str);
+	return (str);
 }

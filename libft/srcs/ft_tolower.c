@@ -6,11 +6,11 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 16:58:51 by abonard           #+#    #+#             */
-/*   Updated: 2021/09/20 17:03:59 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:13:42 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;

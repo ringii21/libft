@@ -6,15 +6,15 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 13:16:10 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/12 13:59:46 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:09:20 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char *ft_strrchr(const char *str, int ch)
+char	*ft_strrchr(const char *str, int ch)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -22,7 +22,7 @@ char *ft_strrchr(const char *str, int ch)
 	while (i >= 0)
 	{
 		if (str[i] == ch)
-			return ((char*)str + i);
+			return ((char *)str + i);
 		i--;
 	}
 	return (NULL);

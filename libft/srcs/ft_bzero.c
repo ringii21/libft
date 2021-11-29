@@ -1,28 +1,28 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                          :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
+/*   By: abonard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/20 15:33:48 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/12 15:15:15 by abonard          ###   ########.fr       */
+/*   Created: 2021/11/29 15:53:26 by abonard           #+#    #+#             */
+/*   Updated: 2021/11/29 17:46:09 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void    ft_bzero(void * s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    int     i;
-    char    *str = (char *)s;
+	size_t		i;
+	char	*str;
 
-    i = 0;
-    while (str[i])
-    {
-        if (i < n)
-            str[i] = '\0';
-        i++;
-    }
+	str = (char *)s;
+	i = 0;
+	while (str[i])
+	{
+		if (i < n)
+			str[i] = '\0';
+		i++;
+	}
 }

@@ -6,18 +6,18 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 15:42:36 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/12 15:44:04 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:04:29 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int    ft_strlen(const char *s)
+int	ft_strlen(const char *s)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-        i++;
-    return(i);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

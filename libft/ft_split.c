@@ -6,38 +6,38 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 15:42:36 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/12 15:44:04 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:54:01 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int ft_check(char c)
+int	ft_check(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n' || c == '\0')
 		return (1);
 	return (0);
 }
 
-int	count_word (char *str)
+int	count_word(const char *str)
 {
-	int i;
-	int word;
+	int	i;
+	int	word;
 
 	i = 0;
 	word = 0;
-	while(str[i])
+	while (str[i])
 	{
 		if (ft_check(str[i]) == 0 && ft_check(str[i + 1]) == 1)
 			word++;
 		i++;
 	}
-	return(word);
+	return (word);
 }
 
-void	ft_copy(char *dest, char *src)
+void	ft_copy(char *dest, const char *src)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (ft_check(src[i]) == 0)
@@ -48,18 +48,17 @@ void	ft_copy(char *dest, char *src)
 	dest[i] = '\0';
 }
 
-#include <stdio.h>
-void	ft_transfert(char **tab, char *str)
+void	ft_transfert(char **tab, const char *str)
 {
-	int i;
-	int j;
-	int word;
+	int	i;
+	int	j;
+	int	word;
 
 	i = 0;
 	word = 0;
 	while (str[i])
 	{
-		if(ft_check(str[i]) == 1)
+		if (ft_check(str[i]) == 1)
 			i++;
 		else
 		{
@@ -74,13 +73,14 @@ void	ft_transfert(char **tab, char *str)
 	}
 }
 
-char **ft_split(char *str)
+char	**ft_split(const char *str, char c)
 {
-	char **tab;
-	int word;
+	char	**tab;
+	int		word;
 
 	word = count_word(str);
-	if((tab = malloc(sizeof(char *) * (word + 1))) == NULL)
+	tab = malloc(sizeof(char *) * (word + 1));
+	if (tab == NULL)
 		return (NULL);
 	tab[word] = 0;
 	ft_transfert(tab, str);

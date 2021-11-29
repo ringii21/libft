@@ -6,13 +6,13 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 20:24:12 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/13 15:14:01 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 15:56:42 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void *calloc(size_t nmemb, size_t size)
+void	*calloc(size_t nmemb, size_t size)
 {
 	void	*str;
 

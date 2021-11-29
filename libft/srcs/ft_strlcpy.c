@@ -6,15 +6,15 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 14:14:09 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/26 16:30:45 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:03:12 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-size_t		ft_strlcpy(char *dest, char *src, size_t size)
+size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {
-	size_t i;
+	size_t	i;
 
 	if (!dest || !src)
 		return (0);

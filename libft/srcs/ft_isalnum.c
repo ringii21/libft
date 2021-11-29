@@ -6,11 +6,11 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 15:27:51 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/26 16:27:54 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 15:57:20 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int val)
+int	ft_isalnum(int val)
 {
 	if ((val >= '0' && val <= '9') || (val >= 'a' && val <= 'z')
 		|| (val >= 'A' && val <= 'Z'))

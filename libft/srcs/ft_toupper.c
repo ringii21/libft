@@ -6,15 +6,15 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 16:11:48 by abonard           #+#    #+#             */
-/*   Updated: 2021/09/20 16:58:25 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 17:16:21 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
 		c -= 32;
 	}
-	return(c);
+	return (c);
 }

@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
+/*   By: abonard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/20 15:05:48 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/24 16:15:43 by abonard          ###   ########.fr       */
+/*   Created: 2021/11/29 16:02:42 by abonard           #+#    #+#             */
+/*   Updated: 2021/11/29 17:46:34 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *memmove(void *dest, const void *src, size_t n)
+void	ft_memcpy(void *dest, void *src, size_t n)
 {
-	
-	ft_bzero((char *)src, ft_strlen(src));
+	size_t		i;
+	char	*csrc;
+	char	*cdest;
 
+	i = 0;
+	csrc = (char *)src;
+	cdest = (char *)dest;
+	while (i < n)
+	{
+		cdest[i] = csrc[i];
+		i++;
+	}
 }

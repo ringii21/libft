@@ -6,20 +6,20 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 17:05:23 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/23 16:48:51 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/29 16:55:37 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while ((s[i]) && (s[i]) != c)
 		i++;
 	if (s[i] == c)
-		return ((char*)s);
+		return ((char *)s);
 	return (NULL);
 }
