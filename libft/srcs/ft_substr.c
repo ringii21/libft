@@ -6,26 +6,22 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 15:15:28 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/24 19:13:52 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/26 16:30:00 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <string.h>
 char *ft_substr(char const *s, unsigned int start,size_t len)
 {
-	//wawaweewa = 9 len string
-	//start = 4
-	//len = 2
-	//output: wee (resultat souhaiter)
-	unsigned int		slen;
+//	unsigned int		slen;
 	char	*dest;
 	unsigned int i;
 	unsigned int x;
 
-	slen = ft_strlen(s);
+	//slen = strlen(s);
 	i = 0;
 	x = 0;
 	while (i < start)

@@ -6,11 +6,11 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 15:42:36 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/12 15:44:04 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/26 16:31:10 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 void    *ft_memset(void *s, int c, size_t n)
 {
     int i;

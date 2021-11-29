@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/20 15:05:48 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/24 16:15:43 by abonard          ###   ########.fr       */
+/*   Created: 2021/10/12 15:27:51 by abonard           #+#    #+#             */
+/*   Updated: 2021/11/26 16:27:54 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void *memmove(void *dest, const void *src, size_t n)
+int ft_isalnum(int val)
 {
-	
-	ft_bzero((char *)src, ft_strlen(src));
-
+	if ((val >= '0' && val <= '9') || (val >= 'a' && val <= 'z')
+		|| (val >= 'A' && val <= 'Z'))
+		return (1);
+	return (0);
 }

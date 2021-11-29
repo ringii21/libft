@@ -6,12 +6,12 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:42:42 by abonard           #+#    #+#             */
-/*   Updated: 2021/10/22 16:21:36 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/26 16:04:02 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT 
-#define LIBFT
+#ifndef LIBFT_H 
+#define LIBFT_H
 #include <unistd.h>
 #include <stdlib.h>
 
@@ -24,6 +24,7 @@ int		ft_isprint(int val);
 int		ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_tolower(int c);
+int		ft_toupper(int c);
 void	ft_bzero(void * s, size_t n);
 void	*calloc(size_t nmemb, size_t size);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);

@@ -1,10 +1,12 @@
+#-*-Makefile-*-
+
 SRC_DIR		=		./srcs/
 
 HEAD_DIR	=		./includes/
 
-SRCS		= 		${SRC_DIR}*.c
+SRCS		= 		$(wildcard $(SRC_DIR)*.c)
 
-HEAD		=		${HEAD_DIR}ft.h
+HEAD		=		${HEAD_DIR}libft.h
 
 OBJS		= ${SRCS:.c=.o}
 
