@@ -2,8 +2,6 @@
 
 SRC_DIR		=		./srcs/
 
-HEAD_DIR	=		./includes/
-
 SRCS		= 		${SRC_DIR}ft_isalpha.c\
 					${SRC_DIR}ft_isdigit.c\
 					${SRC_DIR}ft_isalnum.c\
@@ -30,8 +28,8 @@ SRCS		= 		${SRC_DIR}ft_isalpha.c\
 					${SRC_DIR}ft_substr.c\
 					${SRC_DIR}ft_strjoin.c\
 					${SRC_DIR}ft_strtrim.c\
-					${SRC_DIR}ft_split.c\
-					${SRC_DIR}ft_itoa.c\
+					${SRC_DIR}ft_split.c
+				#	${SRC_DIR}ft_itoa.c \
 					${SRC_DIR}ft_strmapi.c\
 					${SRC_DIR}ft_striteri.c\
 					${SRC_DIR}ft_putchar_fd.c\
@@ -39,7 +37,7 @@ SRCS		= 		${SRC_DIR}ft_isalpha.c\
 					${SRC_DIR}ft_putendl_fd\
 					${SRC_DIR}ft_putnbr_fd.c
 
-HEAD		=		${HEAD_DIR}libft.h
+HEAD		=		libft.h
 
 OBJS		= ${SRCS:.c=.o}
 
@@ -52,7 +50,7 @@ RM			= rm -f
 CFLAGS		= -Wall -Wextra -Werror
 
 .c.o:
-			${CC} ${CFLAGS} -I${HEAD_DIR} -c $< -o ${<:.c=.o}
+			${CC} ${CFLAGS} -I ${HEAD} -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
 			ar -rc libft.a ${OBJS}

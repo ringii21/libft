@@ -6,7 +6,7 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:42:42 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/29 16:50:50 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/30 15:18:32 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	ft_memcpy(void *dest, void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 char	**ft_split(const char *str, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);

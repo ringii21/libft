@@ -6,11 +6,11 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 14:01:29 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/29 17:05:38 by abonard          ###   ########.fr       */
+/*   Updated: 2021/11/30 14:27:30 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

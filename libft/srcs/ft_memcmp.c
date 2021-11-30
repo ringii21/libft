@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abonard <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/29 16:02:42 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/29 17:46:34 by abonard          ###   ########.fr       */
+/*   Created: 2021/11/30 14:39:21 by abonard           #+#    #+#             */
+/*   Updated: 2021/11/30 14:44:32 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_memcpy(void *dest, void *src, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
-	char	*csrc;
-	char	*cdest;
+	size_t	pos;
+	unsigned char	*cs1;
+	unsigned char	*cs2;
+	int	res;
 
-	i = 0;
-	csrc = (char *)src;
-	cdest = (char *)dest;
-	while (i < n)
+	pos = 0;
+	cs1 = (unsigned char *)s1;
+	cs2 = (unsigned char *)s2;
+	while (pos < n)
 	{
-		cdest[i] = csrc[i];
-		i++;
+		res = cs1 -cs2;
+		++pos;
 	}
+	if (res)
+		return (res);
+	return (0);
 }
