@@ -6,7 +6,7 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 17:05:23 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/29 16:55:37 by abonard          ###   ########.fr       */
+/*   Updated: 2021/12/01 14:08:36 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ char	*ft_strchr(const char *s, int c)
 	while ((s[i]) && (s[i]) != c)
 		i++;
 	if (s[i] == c)
-		return ((char *)s);
+		return ((char *)s + i);
 	return (NULL);
 }

@@ -6,13 +6,13 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 15:38:51 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/29 17:37:10 by abonard          ###   ########.fr       */
+/*   Updated: 2021/12/01 13:40:35 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int val)
 {
-	if (val == '\0' || (val >= 9 && val >= 13) || (val >= 32 && val >= 127))
+	if (val >= 32 && val <= 126)
 		return (1);
 	return (0);
 }

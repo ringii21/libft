@@ -11,6 +11,7 @@ SRCS		= 		${SRC_DIR}ft_isalpha.c\
 					${SRC_DIR}ft_memset.c\
 					${SRC_DIR}ft_bzero.c\
 					${SRC_DIR}ft_memcpy.c\
+					${SRC_DIR}ft_memccpy.c\
 					${SRC_DIR}ft_memmove.c\
 					${SRC_DIR}ft_strlcpy.c\
 					${SRC_DIR}ft_strlcat.c\

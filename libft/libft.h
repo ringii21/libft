@@ -6,7 +6,7 @@
 /*   By: abonard <abonard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 15:42:42 by abonard           #+#    #+#             */
-/*   Updated: 2021/11/30 15:18:32 by abonard          ###   ########.fr       */
+/*   Updated: 2021/12/01 14:06:49 by abonard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_toupper(int c);
 void	ft_bzero(void * s, size_t n);
 void	*calloc(size_t nmemb, size_t size);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
-void	ft_memcpy(void *dest, void *src, size_t n);
+void	*ft_memcpy(void *dest, void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
